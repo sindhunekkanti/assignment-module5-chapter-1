@@ -1,0 +1,218 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled17.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMjZfbBLU49yMRG7GgCiC8o",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sindhunekkanti/assignment-module5-chapter-1/blob/master/assignment%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qdhefwxgEQ4X",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "bed6793c-f88a-45ae-93d1-1104e803795c"
+      },
+      "source": [
+        " \n",
+        "#sum of the data in dictionary\n",
+        "my_dict = {'data1':100,'data2':-54,'data3':247}\n",
+        "print(sum(my_dict.values()))"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "293\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OmfJZIwhEedJ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "baa16edf-6a12-480f-b527-1129bcd72c09"
+      },
+      "source": [
+        " \n",
+        "# demonstrate accessing elements\n",
+        "my_dict = {'name': 'sindhu', 'age': 18}\n",
+        "print(my_dict['name']) \n",
+        "print(my_dict.get('age'))"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "sindhu\n",
+            "18\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YBBvzriwEuqD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "cbcfd446-a2dd-4172-a338-ffabb99cffd3"
+      },
+      "source": [
+        " \n",
+        "# concate two dictionaries\n",
+        "d1={'A':1,'B':2}\n",
+        "d2={'C':3}\n",
+        "d1.update(d2)\n",
+        "print(\"Concatenated dictionary is:\")\n",
+        "print(d1)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Concatenated dictionary is:\n",
+            "{'A': 1, 'B': 2, 'C': 3}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "H3vqPPu-FMGb",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "25a1f8a8-1484-49e1-84f9-eca08d25e345"
+      },
+      "source": [
+        " \n",
+        "# to add key values\n",
+        "dict = {'a':'sindhu', 'b':'baby'}  \n",
+        " \n",
+        "print(\"Current Dict is: \", dict)\n",
+        " \n",
+        "dict1 = {'c':'sindhu', 'd':'is', 'e':'fabulous'}  \n",
+        " \n",
+        "dict.update(dict1)  \n",
+        " \n",
+        " \n",
+        "dict.update(newkey1 ='portal')  \n",
+        " \n",
+        "print(dict)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Current Dict is:  {'a': 'sindhu', 'b': 'baby'}\n",
+            "{'a': 'sindhu', 'b': 'baby', 'c': 'sindhu', 'd': 'is', 'e': 'fabulous', 'newkey1': 'portal'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nReUorAxFkET",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c402feb8-2245-4283-84e7-851429e07081"
+      },
+      "source": [
+        " \n",
+        "# length of dictionary\n",
+        "dict = {'Name': 'baby', 'Age': 9};\n",
+        "print (\"Length : %d\" % len (dict))"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Length : 2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8nUNH-PhFx6D",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "26ce0639-7136-49b9-e6bc-6f3a2e1133e9"
+      },
+      "source": [
+        " \n",
+        "# to remove item from dictionary\n",
+        "dict = {\n",
+        "  \"Name\": \"sindhu\",\n",
+        "  \"Age\": \"18\",\n",
+        "  \"Roll.no\": 19\n",
+        "}\n",
+        "dict.pop(\"Age\")\n",
+        "print(dict)"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Name': 'sindhu', 'Roll.no': 19}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
